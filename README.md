@@ -14,7 +14,7 @@ apt install -y zip htop screen libgl1-mesa-glx
 
 # install required packages
 pip install pandas lxml 
-conda install -c conda-forge opencv
+conda install -c menpo opencv
 
 # go to code folder
 cd /src
