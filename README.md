@@ -21,6 +21,15 @@ cd /yolov7_mbg
 
 ## How to run
 
+### Formatting dataset
+Run ```mbg2yolo.py``` referencing the path containing **only test samples**. The script will convert original xml annotations into YOLO formatting. Assuming the docker enviroment suggested above, the dataset should be located at ```/dataset```.   
+
+For example:
+```
+python mbg2yolo.py --path /dataset/test/
+````
+
+
 Important parameters: 
 - --batch-size: size of each image batch (default: 32)
 - --device: cuda device, i.e. 0 or 0,1,2,3 or cpu
