@@ -1,5 +1,5 @@
 # ICIP-MBG-PATREO
-Entry to ICIP Grand Challenge 2023 - Automatic Detection of Mosquito Breeding Grounds
+Entry to ICIP Grand Challenge 2023 - Automatic Detection of Mosquito Breeding Grounds. This system was developed at [PATREO - Pattern Recognition and Earth Observation Laboratory](http://patreo.dcc.ufmg.br), as part of the WildPixels project funded by Serrapilheira. To know more, visit the [project website](http://patreo.dcc.ufmg.br/2021/09/01/wildpixels/).
 
 ## Environment Setup
 This setup adapts the set of recommendations from the original [yolo repository](https://github.com/WongKinYiu/yolov7)
