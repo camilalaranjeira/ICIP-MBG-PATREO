@@ -12,7 +12,8 @@ docker run --gpus all --name yolov7_mbg -it -v dataset_path/:/dataset/ -v code_p
 apt-get update
 
 # install required packages
-pip install pandas lxml 
+pip install pandas lxml seaborn 
+conda install -c menpo opencv
 
 # go to code folder
 cd /src
@@ -39,10 +40,13 @@ wget https://www.dropbox.com/s/9anb8hfsbyt9j6e/yolov7_mbg_adam_960_alltrain.pt -
 
 ### Run model
 
-Important parameters: 
+```
+python yolo/test.py --weights weights/yolov7_mbg_adam_960_alltrain.pt --data cfg/mbg_test.yaml --conf-thres 0.5 --iou-thres 0.5 --img-size 960 --device 0 --batch-size 16 --name mbg_test --verbose
+```
+
+Important parameters you may want to change: 
 - --batch-size: size of each image batch (default: 32)
 - --device: cuda device, i.e. 0 or 0,1,2,3 or cpu
-- --verbose: report mAP by class
 - --project: root folder to save results (default: runs/test)
 - --name: folder created to store results (within --project)
 
