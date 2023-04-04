@@ -8,18 +8,11 @@ This setup adapts the set of recommendations from the original [yolo repository]
 # create the docker container, you can change the share memory size if you have more.
 docker run --gpus all --name yolov7_mbg -it -v dataset_path/:/dataset/ -v code_path/:/src --shm-size=2g nvcr.io/nvidia/pytorch:21.08-py3
 
-# apt install required packages
-apt-get update
-apt-get install --upgrade python3-opencv
-
-# install required packages
-pip install pandas lxml seaborn 
-
-# set python alias
-alias python='/usr/bin/python3.8'
-
-# go to code folder
+# go to source code folder (as defined while running the above container)
 cd /src
+
+# run setup script (installs required packages)
+sh setup.sh
 ```
 
 ## How to run
