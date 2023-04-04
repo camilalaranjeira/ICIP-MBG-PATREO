@@ -21,7 +21,7 @@ cd /src
 ## How to run
 
 ### Formatting dataset
-Run ```mbg2yolo.py``` referencing the path containing **only test samples**. The script will convert original xml annotations into YOLO formatting. Assuming the docker enviroment suggested above, the dataset should be located at ```/dataset```.   
+Run ```mbg2yolo.py``` referencing the path containing **only test samples**. The script will produce YOLO a formatted dataset from xml annotations provided. Assuming the docker enviroment suggested above, the dataset should be located at ```/dataset```. Output files will be stored at ```/src/data```.   
 
 For example:
 ```
