@@ -30,6 +30,14 @@ python mbg2yolo.py --path /dataset/test/
 
 > Note that we are assuming folder structure as released by the challenge (```flight-mbgXY/ann/videoXY.xml```, ```flight-mbgXY/avi/videoXY.avi```) 
 
+### Download trained weights
+
+Weights file should be store inside folder "weights" of this repository. Assuming the docker environment suggested above, the weights should be located at ```/src/weights``` as follows: 
+```
+wget https://www.dropbox.com/s/9anb8hfsbyt9j6e/yolov7_mbg_adam_960_alltrain.pt -P /src/weights/
+```
+
+### Run model
 
 Important parameters: 
 - --batch-size: size of each image batch (default: 32)
