@@ -10,10 +10,13 @@ docker run --gpus all --name yolov7_mbg -it -v dataset_path/:/dataset/ -v code_p
 
 # apt install required packages
 apt-get update
+apt-get install --upgrade python3-opencv
 
 # install required packages
 pip install pandas lxml seaborn 
-conda install -c menpo opencv
+
+# set python alias
+alias python='/usr/bin/python3.8'
 
 # go to code folder
 cd /src
