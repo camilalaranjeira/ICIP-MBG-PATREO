@@ -9,12 +9,10 @@ This setup adapts the set of recommendations from the original [yolo repository]
 docker run --gpus all --name yolov7_mbg -it -v dataset_path/:/dataset/ -v code_path/:/src --shm-size=2g nvcr.io/nvidia/pytorch:21.08-py3
 
 # apt install required packages
-apt update
-apt install -y zip htop screen libgl1-mesa-glx
+apt-get update
 
 # install required packages
 pip install pandas lxml 
-conda install -c menpo opencv
 
 # go to code folder
 cd /src
@@ -29,6 +27,8 @@ For example:
 ```
 python mbg2yolo.py --path /dataset/test/
 ````
+
+> Note that we are assuming folder structure as released by the challenge (```flight-mbgXY/ann/videoXY.xml```, ```flight-mbgXY/avi/videoXY.avi```) 
 
 
 Important parameters: 
