@@ -1,0 +1,10 @@
+# pre-requisites
+# run python mbg2yolo.py --path /dataset/test that will generate file samples.txt used bellow
+val: data/samples.txt     
+
+# number of classes
+nc: 6
+
+# class names
+names: [ 'bucket', 'watertank', 'bottle', 'pool', 'tire', 'puddle']
+

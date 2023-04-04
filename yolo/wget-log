@@ -1,0 +1,15 @@
+--2022-11-01 22:48:30--  https://www.quiropracticllevant.com/bd/imagenes/imagen69p.jpg
+Resolving www.quiropracticllevant.com (www.quiropracticllevant.com)... 178.33.163.6
+Connecting to www.quiropracticllevant.com (www.quiropracticllevant.com)|178.33.163.6|:443... failed: Connection timed out.
+Retrying.
+
+--2022-11-01 22:50:41--  (try: 2)  https://www.quiropracticllevant.com/bd/imagenes/imagen69p.jpg
+Connecting to www.quiropracticllevant.com (www.quiropracticllevant.com)|178.33.163.6|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 34335 (34K) [image/jpeg]
+Saving to: ‘imagen69p.jpg’
+
+     0K .......... .......... .......... ...                  100%  149K=0.2s
+
+2022-11-01 22:51:47 (149 KB/s) - ‘imagen69p.jpg’ saved [34335/34335]
+
